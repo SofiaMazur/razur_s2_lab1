@@ -3,10 +3,10 @@ go_testedbinary {
   name: "bood",
 
   // Go package to build.
-  pkg: "github.com/FictProger/architecture2-lab-1/build/cmd/bood",
+  pkg: "github.com/SofiaMazur/razur_s2_lab1/tree/main/build/cmd/bood",
 
   // Go package to test.
-  testPkg: "github.com/FictProger/architecture2-lab-1/build/gomodule",
+  testPkg: "github.com/SofiaMazur/razur_s2_lab1/tree/main/build/gomodule",
 
   // Build inputs.
   srcs: ["**/*.go", "../go.mod"],
