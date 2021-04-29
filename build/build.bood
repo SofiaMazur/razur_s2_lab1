@@ -1,0 +1,19 @@
+go_testedbinary {
+  // Module (and output) name.
+  name: "bood",
+
+  // Go package to build.
+  pkg: "github.com/FictProger/architecture2-lab-1/build/cmd/bood",
+
+  // Go package to test.
+  testPkg: "github.com/FictProger/architecture2-lab-1/build/gomodule",
+
+  // Build inputs.
+  srcs: ["**/*.go", "../go.mod"],
+
+}
+
+zip_archive {
+  name: "my-archive",
+  srcs: ["**/*.txt"],
+}
