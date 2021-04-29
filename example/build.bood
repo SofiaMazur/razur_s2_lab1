@@ -1,0 +1,19 @@
+go_testedbinary {
+  // Module (and output) name.
+  name: "bin",
+
+  // Go package to build.
+  pkg: "github.com/SofiaMazur/razur_s2_lab1/tree/main/example/bin", 
+
+  // Go package to test.
+  testPkg: "github.com/SofiaMazur/razur_s2_lab1/tree/main/example/bin",
+
+  // Build inputs.
+  srcs: ["**/*.go", "../go.mod"],
+
+}
+
+zip_archive {
+  name: "my-example-archive",
+  srcs: ["**/*.txt"],
+}
